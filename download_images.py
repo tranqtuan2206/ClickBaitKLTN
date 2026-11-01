@@ -4,11 +4,11 @@ import pandas as pd
 import requests
 
 # 1. Đọc dataset
-csv_path = 'clickbait_dataset_vietnamese.csv'
+csv_path = os.path.join('data', 'text', 'clickbait_dataset_vietnamese.csv')
 df = pd.read_csv(csv_path)
 
 # 2. Tạo thư mục images nếu chưa có
-images_dir = 'images'
+images_dir = os.path.join('data', 'images')
 os.makedirs(images_dir, exist_ok=True)
 
 

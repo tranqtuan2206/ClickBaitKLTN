@@ -1,0 +1,37 @@
+# Yêu cầu: Python 3.11 (khuyến nghị — torch/pyvi chưa hỗ trợ tốt Python 3.13+)
+#
+# Cài đặt:
+#   python -m venv venv
+#   venv\Scripts\activate            (Windows)  |  source venv/bin/activate (Linux/macOS)
+#   pip install -r requirements.txt
+#
+# Nếu dùng GPU NVIDIA, cài torch bản CUDA trước cho đúng phiên bản driver:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu128
+# rồi mới chạy pip install -r requirements.txt
+
+# --- Deep learning ---
+torch>=2.2
+transformers>=4.40
+tokenizers>=0.19
+safetensors>=0.4
+huggingface_hub>=0.23
+# torchvision>=0.17   # chỉ cần nếu bạn dùng thêm model ảnh của torchvision
+
+# --- Xử lý dữ liệu / NLP tiếng Việt ---
+numpy>=1.26
+pandas>=2.2
+scikit-learn>=1.4
+pyvi>=0.1.1
+
+# --- Ảnh ---
+pillow>=10.2
+
+# --- Scraping / gọi HTTP ---
+requests>=2.31
+beautifulsoup4>=4.12
+
+# --- Giao diện app ---
+streamlit>=1.36
+
+# --- Tiện ích ---
+tqdm>=4.66
